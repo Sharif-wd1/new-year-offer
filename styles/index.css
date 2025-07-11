@@ -1,0 +1,385 @@
+
+
+body {
+    font-family: sans-serif;
+}
+/* Banner */
+.banner {
+    width: 1320px;
+    height: 600px;
+    background-image: url("images/banner-image.png");
+    border-radius: 5px;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.banner::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.7) 25%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.2) 80%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+
+.banner-content {
+    width: 632px;
+    height: 246px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /* border: 1px solid black; */
+}
+
+.banner-content h3 {
+    font-size: 32px;
+    color: #ffffff;
+    font-family: 'Merriweather';
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    /* border: 1px solid yellow; */
+}
+
+.banner-content h2 {
+    font-size: 72px;
+    font-weight: black;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    /* border: 1px solid yellow; */
+}
+
+.title {
+    font-size: 88px;
+    font-weight: bold;
+    margin-top: 140px;
+    text-align: center;
+    color: #FF0000;
+}
+
+.banner-content-1 {
+    width: 802.9px;
+    height: 651px;
+    background-image: url(images/new-year-photo.png);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.description {
+    font-size: 24px;
+    font-weight: 500px;
+    color: #FF0000;
+    text-align: center;
+    margin: 0;
+}
+
+.banner-1 h4 {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+}
+ /* Greeting banner */
+.greeating-banner {
+    width: 1320px;
+    height: 600px;
+    display: flex;
+    gap: 39.17px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url(images/vectorrr.png);
+    margin-top: 95px;
+    margin-bottom: 120px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+}
+
+.greeating-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.6); 0.4 = 40% dark */
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8) 0%,     /* বাম পাশে 60% dark */
+        rgba(0, 0, 0, 0.7) 25%,   /* মাঝে দিকে আসছে */
+        rgba(0, 0, 0, 0.4) 50%,   /* মাঝখানে 40% dark */
+        rgba(0, 0, 0, 0.3) 75%,   /* ডানে আবার একটু ঘন */
+        rgba(0, 0, 0, 0.2) 100%   /* একদম ডান পাশে 60% dark */
+    );
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.greeating-content {
+    /* border: 1px solid black; */
+    width: 697px;
+    height: 400px;
+    margin: 0;
+    z-index: 2;
+}
+
+.greeating-content h2 {
+    font-size: 64px;
+    font-weight: black;
+    color: #ffffff;
+    width: 600px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    font-family: 'Merroweather';
+}
+
+.greeating-content p {
+    font-size: 18px;
+    font-weight: ;
+    color: #a09f9f;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    margin-top: 0;
+    padding: 20px;
+    padding-left: 0;
+    font-family: 'Inter';
+}
+
+.greeating-content a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    padding-left: 40px;
+    font-family: sans-serif;
+}
+
+.greeating-year {
+    /* border: 1px solid black; */
+    width: 319.83px;
+    height: 464.66px;
+    margin: 0;
+    z-index: 2;
+}
+
+/* Join-banner */
+.join-banner {
+    display: flex;
+    flex-flow: column;
+    width: 1320px;
+    height: 482px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffe5e5, #ffffff);
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 120px;
+    /* border: 1px solid black; */
+    /* border: 1px solid black; */
+}
+
+.join-banner-content {
+    font-size: 32px;
+    font-weight: 600;
+    /* border: 1px solid black; */
+}
+.join-banner-content p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.title-color {
+    color: #FF0000;
+}
+
+.join-banner-btn {
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 48px;
+    /* border: 1px solid black; */
+}
+
+/* coming-soon-banner*/
+.coming-soon-banner {
+    display: flex;
+    width: 1313px;
+    height: 463px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+    background-image: url(images/group96.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 100px) bottom;
+    /* border: 1px solid black; */
+}
+
+.coming-soon-description {
+    width: 375px;
+    height: 255px;
+    /* border: 1px solid black; */
+}
+
+.coming-soon-offer {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FF0000;
+    font-family: Inter;
+    margin-top: 0;
+    /* border: 1px solid black; */
+}
+
+.coming-soon-description h3 {
+    font-size: 48px;
+    font-weight: black;
+    color: #070211;
+    font-family: Merriweather;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    /* border: 1px solid black;    */
+}
+
+.common-description {
+    font-size: 20px;
+    color: gray;
+    font-family: Inter;
+    margin-top: 0;
+}
+
+.img-bg {
+    border: 17px solid #FF0000;
+    padding: 30px;
+    border-radius: 360px;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+.coming-soon-img {
+    /* width: 463px;
+    height: 463px; */
+    
+    /* border: 1px solid black; */
+    border-radius: 360px;
+
+}
+
+.coming-soon-year {
+    width: 230px;
+    height: 170px;
+    /* border: 1px solid black; */
+}
+.year-p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.coming-soon-year h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FF0000;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* disscount banner */
+.discount-banner {
+    width: 1320px;
+    height: 986px;
+    margin: 0 auto;
+    background-image: url(images/reactangle.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+}
+
+.discount-text {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.discount-text h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #070211;
+}
+
+.discount-text h1 {
+    font-size: 72px;
+    font-weight: black;
+    font-family: Merriweather;
+    padding: 8px 0 5px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.discount-text h1 span {
+    color: #FF0000;
+}
+
+.discount-text p {
+    font-size: 20px;
+    font-family: Inter;
+    color: #555;
+}
+
+.banner-img {
+    display: flex;
+    margin-top: 0;
+}
+.box-img {
+    /* border: 1px solid black; */
+    width: 800px;
+    position: absolute;
+    bottom: 2%;
+    left: 10%;
+    transform: translateX(-50%);
+    width: 100px; /* optional */
+    height: auto;
+}
+.box-img-content {
+    margin-bottom: 5;
+    width: 700px;
+    height: 600px;
+}
+
+.badge {
+    position: absolute;
+    right: 5%;
+    bottom: 30%;
+}
