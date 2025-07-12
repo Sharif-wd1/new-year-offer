@@ -257,7 +257,8 @@ body {
     font-weight: 600;
     color: #FF0000;
     font-family: Inter;
-    margin-top: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
     /* border: 1px solid black; */
 }
 
@@ -266,8 +267,8 @@ body {
     font-weight: black;
     color: #070211;
     font-family: Merriweather;
-    margin-top: 5px;
-    margin-bottom: 25px;
+    margin-top: 12px;
+    margin-bottom: 12px;
     /* border: 1px solid black;    */
 }
 
@@ -283,6 +284,7 @@ body {
     padding: 30px;
     border-radius: 360px;
     background-color: white;
+    margin-right: 10px;
     /* border: 1px solid black; */
 }
 .coming-soon-img {
@@ -382,4 +384,212 @@ body {
     position: absolute;
     right: 5%;
     bottom: 30%;
+}
+
+/* Portfolio sectin */
+.portfolio-section {
+    width: 1320px;
+    height: 1163px;
+    margin: 0 auto;
+    margin-top: 140px;
+}
+
+.portfolio-section h4 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Inter' , sans-serif;
+    color: #FF0000;
+    margin: 0;
+}
+
+.portfolio-section h3 {
+    font-size: 48px;
+    font-weight: black;
+    font-family: 'Merriweather' , sans-serif;
+    color: #070211;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.portfolio-section p {
+    font-size: 20px;
+    font-family: 'Inter' , sans-serif;
+    color: gray;
+    width: 896px;
+    width: fixed;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.portfolio-img {
+    width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.portfolio-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* Subscribe section */
+
+.subscribe-section {
+    width: 1320px;
+    height: 600px;
+    background-color: rgb(255, 238, 240);
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.subscribe-section img {
+    width: 150px;
+    height: 150px;
+    margin-top: 80px;
+}
+.subscribe-section h3 {
+    font-size: 48px;
+    font-weight: black;
+    font-family: 'Merriweather' , sans-serif;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+.subscribe-section p {
+    width: 860px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter' , sans-serif;
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.subscribe-box {
+    width: 648px;
+    height: 72px;
+    display: flex;
+    background-color: white;
+    border-radius: 999px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.05);
+    /* border: 1px solid black; */
+}
+.subscribe-box input {
+    flex: 1;
+    border: none;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Inter' , sans-serif;
+    border-radius: 999px 0 0 999px;
+    outline: none;
+    color: #333;
+}
+
+.subscribe-box input::placeholder {
+    color: rgb(182, 181, 181);
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Inter' , sans-serif;
+}
+
+.subscribe-box button {
+    color: white;
+    background-color: #FF0000;
+    width: 210px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter' , sans-serif;
+    padding: 24px 0;
+    cursor: pointer;
+    border-radius: 0 999px 999px 0;
+    transition: 0.3s;
+}
+
+.subscribe-box button:hover {
+    background-color: #3b80b9;
+}
+
+/* footer */
+footer {
+    /* width: 1600px; */
+    width: 100%;
+    height: 609px;
+    background-color: #070211;
+    color: white;
+    /* padding:60px 140px; */
+    padding: 105px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.footer-top {
+    width: 1169px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer-top .left {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Inter' , sans-serif;
+}
+
+.footer-top .right {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Inter' , sans-serif;
+}
+.right a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.line {
+    height: 1px;
+    background-color: rgb(27, 27, 27);
+    margin: 50px 0;
+}
+
+.social-icons img {
+    width: 64px;
+    height: 64px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom .left {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Inter' , sans-serif;
+}
+
+.footer-bottom .right {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Inter' , sans-serif;
 }
